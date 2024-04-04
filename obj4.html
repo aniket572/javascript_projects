@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // OBJECT CREATION USING FUNCTION CONSTRUCTOR
+
+        function emp(ename,age,sal,email){
+            this.name=ename;
+            this.age=age;
+            this.sal=sal;
+            this.email=email;
+        }
+
+        let emp1=new emp("ramesh",23,45000,"ramesh@123.com");
+        console.log(emp1);
+        let emp2=new emp("umesh",24,55000,"umesh@123.com");
+        console.log(emp2);
+        emp1.age="31";
+        console.log(emp1);
+    </script>
+</body>
+</html>

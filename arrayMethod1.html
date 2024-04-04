@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //push(): It is used to add the elements from
+        // last index of an array, we can add more than one elements simultaneously
+        let num1=[1,2,3,4]
+        console.log(num1);
+        num1.push(50,60,70)
+        console.log(num1);
+
+
+        //pop():It is used to remove an element from
+        // last index of an array, at a time we can remove only one element.
+        let num2=[10,20,30,40,50]
+        console.log(num2);
+        console.log(num2.pop());
+        console.log(num2);
+
+
+        //unshift():It is used to add the elements from
+        //starting index of an array, we can add more than one elements simultaneously
+        let num3=[1,2,3,4,5]
+        console.log(num3);
+        num3.unshift(0,-1,-2);
+        console.log(num3);
+
+
+        //shift(): It is used to remove an element from
+        //starting index of an array, at a time we can remove only one element.
+        let num4=[10,20,30,40,50]
+        console.log(num4);
+        console.log(num4.shift());
+        console.log(num4);
+
+        //includes():It is used to check the element, whether 
+        //it is present or not, if it is present then it will returns
+        //true or else false
+        let num5=["hello","bye",true]
+        console.log(num5.includes("hello")); //true
+
+
+        // slice(staring index,end index): It is used to create a new fragment
+        let arr=["index-0","index-1","index-2","index-3","index-4"]
+        console.log(arr);
+        console.log(arr.slice(1,4));
+        console.log(arr);
+
+
+        //splice(star index,deleted count,[new element]):It is used to delete one fragment form given array 
+        // and replace it with new elements---- Replacement of new element is optional
+        let num=[10,20,30,40,50]
+        console.log(num);
+        console.log(num.splice(0,2,100,200,300));
+        console.log(num);
+
+        //sort(): It is used to sort the elements based on digit or alphabets which is depends on values in an array
+        let sort1=[100,11,0,10,1000,111]
+        console.log(sort1);
+        console.log(sort1.sort());
+
+        let sort2=["apple","banana","pineapple","mango","chiku"]
+        console.log(sort2);
+        console.log(sort2.sort());
+        console.log(sort2);
+
+        let sort3=[11,"22",true,"pineapple","mango","chiku",33,'d']
+        console.log(sort3);
+        console.log(sort3.sort());
+
+        // reverse(): It is used to reverse the value inside an array
+        let rev1=[10,30,20,40,50]
+        console.log(rev1.reverse());
+
+        //indexOf():It is used to get the index value of given element
+        let arr2=["index-0","index-1","index-2"]
+        console.log(arr2.indexOf("index-1"));
+    </script>
+</body>
+</html>

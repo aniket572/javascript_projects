@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Oder Function</title>
+</head>
+<body>
+    <script>
+        function demo(c,d) {
+            console.log(c+d);
+            return (a,b)=>{
+                console.log(a*b);
+            }
+        }
+        demo(10,20)(10,20)
+    </script>
+</body>
+</html>

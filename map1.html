@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  let num1=[2,4,6,8,10]
+        // console.log(num1);
+        // let square1=num1.map((cValue)=>{
+        //         return Math.pow(cValue,2) 
+        // })
+        // console.log(square1);
+
+        let num=[2,4,6,8,10]
+        console.log(num);
+        // debugger
+        let square=num.map((cValue,index)=>{
+            if ((index+1)%2==0) {
+                return Math.pow(cValue,2)
+            }       
+        })
+        console.log(square);
+    </script>
+</body>
+</html>

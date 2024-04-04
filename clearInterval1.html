@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print">What is your lucky number? Let's check</p>
+    <button onclick="getNumber()">Start</button>
+    <button onclick="stopNumber()">Stop</button>
+    <button onclick="getReset()">Reset</button>
+    <script>
+        let ele=document.getElementById("print")
+        let count=0;
+        let timer;
+        function getNumber(params) {
+            timer=setInterval(()=>{
+                ele.innerHTML=`Your lucky number is ${count}`
+                ++count;
+            },1000)
+        }
+        function stopNumber() {
+            clearInterval(timer)
+        }
+        function getReset() {
+            count=0;
+        }
+    </script>
+</body>
+</html>

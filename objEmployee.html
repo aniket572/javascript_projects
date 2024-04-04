@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        let employee = {
+            em1: {
+                name: "aman",
+                id: 175678,
+                email: "example1@gmail.com",
+                dept: { dept_name: "it", hod_name: "Sachin", dept_location: "2nd floor" }
+            },
+            em2: {
+                name: "chaman",
+                id: 735678,
+                email: "example2@gmail.com",
+                dept: { dept_name: "hr", hod_name: "dravid", dept_location: "1st floor" }
+            },
+            em3: {
+                name: "chhagan",
+                id: 168978,
+                email: "example3@gmail.com",
+                dept: { dept_name: "rnd", hod_name: "yuvraj", dept_location: "5th floor" }
+            },
+            em4: {
+                name: "bhujbal",
+                id: 987678,
+                email: "example4@gmail.com",
+                dept: { dept_name: "sales", hod_name: "virat", dept_location: "3rd floor" }
+            },
+            em5: {
+                name: "babu",
+                id: 432678,
+                email: "example5@gmail.com",
+                dept: { dept_name: "quality", hod_name: "rohit", dept_location: "4th floor" }
+            }
+        }
+        console.log(employee);
+        console.log(employee.em1.dept.dept_location);
+        console.log(employee.em3.name);
+        employee.em5.dept,dept_name="account"
+        console.log(employee.em5.dept.dept_name);
+        console.log(employee);
+    </script>
+</body>
+
+</html>

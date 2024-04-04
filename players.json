@@ -1,0 +1,142 @@
+{
+    "sachin":{
+        "test":{
+            "match":"234",
+            "runs":"13445",
+            "average":"48",
+            "highest score":"321"
+        },
+        "odi":{
+            "match":"134",
+            "runs":"10445",
+            "average":"57",
+            "highest score":"200*"
+        },
+        "t20":{
+            "match":"165",
+            "runs":"9445",
+            "average":"68",
+            "highest score":"92"
+        }
+    },
+    "virat":{
+        "test":{
+            "match":"234",
+            "runs":"10445",
+            "average":"78",
+            "highest score":"321"
+        },
+        "odi":{
+            "match":"289",
+            "runs":"9445",
+            "average":"59",
+            "highest score":"200*"
+        },
+        "t20":{
+            "match":"185",
+            "runs":"7845",
+            "average":"49",
+            "highest score":"83"
+        }
+    },
+    "rohit":{
+        "test":{
+            "match":"134",
+            "runs":"6445",
+            "average":"68",
+            "highest score":"217"
+        },
+        "odi":{
+            "match":"254",
+            "runs":"8445",
+            "average":"57",
+            "highest score":"264"
+        },
+        "t20":{
+            "match":"165",
+            "runs":"9145",
+            "average":"68",
+            "highest score":"115"
+        }
+    },
+    "yuvi":{
+        "test":{
+            "match":"154",
+            "runs":"8445",
+            "average":"38",
+            "highest score":"171"
+        },
+        "odi":{
+            "match":"194",
+            "runs":"8845",
+            "average":"47",
+            "highest score":"200*"
+        },
+        "t20":{
+            "match":"165",
+            "runs":"7845",
+            "average":"48",
+            "highest score":"82"
+        }
+    },
+    "dhawan":{
+        "test":{
+            "match":"144",
+            "runs":"7945",
+            "average":"48",
+            "highest score":"171"
+        },
+        "odi":{
+            "match":"192",
+            "runs":"7145",
+            "average":"51",
+            "highest score":"137"
+        },
+        "t20":{
+            "match":"143",
+            "runs":"6545",
+            "average":"48",
+            "highest score":"89"
+        }
+    },
+    "gill":{
+        "test":{
+            "match":"14",
+            "runs":"445",
+            "average":"48",
+            "highest score":"121"
+        },
+        "odi":{
+            "match":"18",
+            "runs":"595",
+            "average":"57",
+            "highest score":"209"
+        },
+        "t20":{
+            "match":"45",
+            "runs":"1045",
+            "average":"74",
+            "highest score":"111"
+        }
+    },
+    "surya":{
+        "test":{
+            "match":"4",
+            "runs":"155",
+            "average":"28",
+            "highest score":"71"
+        },
+        "odi":{
+            "match":"34",
+            "runs":"445",
+            "average":"45",
+            "highest score":"81"
+        },
+        "t20":{
+            "match":"65",
+            "runs":"945",
+            "average":"54",
+            "highest score":"102"
+        }
+    }
+}

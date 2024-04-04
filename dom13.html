@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp1" onblur="getBlur()">
+
+    <script>
+        let ele=document.getElementById("inp1")
+
+        function getBlur() {
+            ele.style.height="80px"
+            ele.style.fontSize="30px"
+            ele.style.textAlign="center"
+            ele.style.backgroundColor="skyblue"
+            ele.value=ele.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

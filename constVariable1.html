@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const Variable</title>
+</head>
+<body>
+    <script>
+        // Declaration is not possible in const
+        //  const a;
+
+        // Declaration and Initialization is possible
+        const b=20;
+        console.log(b);
+
+        // Reinitialization is not possible
+        // b=30;
+        // console.log(b);
+
+        // Re-declaration is not possible
+        // const b="redeclare"
+
+        if (true) {
+            const c=30 // block scope variable
+        }
+        // console.log(c);
+
+        // Hoisting : We can initialize the variable before
+        // its declaration is not possible in const
+    </script>
+</body>
+</html>

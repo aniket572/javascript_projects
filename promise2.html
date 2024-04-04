@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .bulb{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="bulb" id="bulb1"></div>
+        <div class="bulb" id="bulb2"></div>
+    </div>
+    <script>
+        let ele1=document.getElementById("bulb1")
+        let ele2=document.getElementById("bulb2")
+        let color1=prompt("Enter your color")
+
+        let prom1=new Promise((res,rej)=>{
+            console.log("color is red");
+            setTimeout(()=>{
+                let prom=color1;
+                if (prom=="red") {
+                    console.log("red color!!!");
+                    res()
+                }
+                else if (prom=="blue") {
+                    console.log("color is blue!!");
+                    rej()
+                }
+            },2000)
+        })
+        prom1.then(()=>{
+            ele1.style.backgroundColor="red"
+        }).catch(()=>{
+            ele2.style.backgroundColor="blue"
+        })
+    </script>
+</body>
+</html>

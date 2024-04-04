@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="myList" onchange="getChange()">
+        <option value="APPLE">APPLE</option>
+        <option value="PINEAPPLE">PINEAPPLE</option>
+        <option value="MANGO">MANGO</option>
+        <option value="BANANA">BANANA</option>
+    </select>
+    <p id="print"></p>
+
+    <script>
+        let myFruits=document.getElementById("myList")
+        let print1=document.getElementById("print")
+
+        function getChange() {
+            print1.innerHTML=`selected fruit is ${myFruits.value}`
+            print1.style.color="blue"
+        }
+    </script>
+</body>
+</html>

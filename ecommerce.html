@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise1=new Promise((res1,rej1)=>{
+            setTimeout(()=>{
+                let order={
+                    status:true
+                }
+                if (order.status==true) {
+                    res1(order)
+                }
+                else{
+                    rej1()
+                }
+            },2000)
+        })
+        promise1.then((order1)=>{
+            return new Promise((res2,rej2)=>{
+                setTimeout(()=>{
+                    let shipping={
+                        status:true
+                    }
+                    if (shipping.status==true) {
+                        res2(shipping)
+                    }
+                    else{
+                        rej2()
+                    }
+                },2000)
+            }).then((shipping1)=>{
+                return new Promise((res3,rej3)=>{
+                    setTimeout(()=>{
+                        let deliver={
+                            status:true
+                        }
+                        if (deliver.status==true) {
+                            res3(deliver)
+                        }
+                        else{
+                            rej3()
+                        }
+                    },2000)
+                }).then((deliver1)=>{
+                    let unboxing={
+                        product:"mobile",
+                        brand:"oneplus",
+                        price:40000,
+                        make:"india"
+                    }
+                    console.log(unboxing);
+                }).catch((deliver1)=>{
+                    alert("Product not Delivered!!");
+                })
+            }).catch((shipping1)=>{
+                alert("Product not Shipped!!");
+            })
+        }).catch((order1)=>{
+            alert("Product not Ordered!!");
+        })
+    </script>
+</body>
+</html>

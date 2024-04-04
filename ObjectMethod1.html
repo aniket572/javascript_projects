@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Delete Method
+
+        let human={
+            name:"gangubai",
+            age:44,
+            email:"gangu@123.com"
+        }
+        console.log(human);
+        delete human.age;
+        console.log(human);
+
+        // assign(): It is used to merge more than one object together
+        let car={
+            comp:"tata",
+            model:"safari",
+            price:150000
+        }
+        let engine={
+            type:"2 stroke",
+            wheel:"4*4",
+            make:"german"
+        }
+        let spec={
+            color:"silver white",
+            height:"7ft"
+        }
+        console.log(Object.assign(car,engine,spec));
+        console.log(car);
+        console.log(engine);
+        console.log(spec);
+
+        // Keys(): It is used to get the keys of an obect
+        console.log(Object.keys(car));
+
+        // values(): It is used to get the values of object
+        console.log(Object.values(car));
+
+        // entries(): It is used to turn object into an array.
+        let duster={
+            comp:"camline",
+            price:50,
+            color:"black",
+            material:"HDPE"
+        }
+        console.log(duster);
+        console.log(Object.entries(duster));
+
+        // seal(): It is used to seal the object, we can modify existing key and values pair
+        // But we can't add new key and value pair.
+        let mobile={
+            comp:"oneplus",
+            price:25000,
+            make:"german"
+        }
+        console.log(mobile);
+        console.log(Object.seal(mobile));
+        console.log(Object.isSealed(mobile));
+        mobile.update="Android 13"
+        console.log(mobile);
+        mobile.make="india"
+        console.log(mobile);
+
+        // freeze(): It is used to lock the object. We neither modify existing key and value pair
+        // nor new key and value pair
+        let liquid={
+            type:"water",
+            temp:"-20c",
+            chemFor:"H2o",
+            scientificColor:"blue"
+        }
+        console.log(liquid);
+        console.log(Object.freeze(liquid));
+        console.log(Object.isFrozen(liquid));
+        liquid.temp="-40c"
+        console.log(liquid)
+        liquid.state="solid";
+        console.log(liquid);
+    </script>
+</body>
+</html>

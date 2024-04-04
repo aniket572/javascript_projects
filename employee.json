@@ -1,0 +1,27 @@
+{
+     "employee1":{
+        "ename":"jay",
+        "empid":"inf121",
+        "age":"21"
+    },
+    "employee2":{
+        "ename":"ajay",
+        "empid":"inf122",
+        "age":"22"
+    },
+    "employee3":{
+        "ename":"vijay",
+        "empid":"inf123",
+        "age":"23"
+    },
+    "employee4":{
+        "ename":"jay",
+        "empid":"inf124",
+        "age":"24"
+    },
+    "employee5":{
+        "ename":"dhananjay",
+        "empid":"inf125",
+        "age":"25"
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <h1 class="classname"></h1>
+    <button onclick="getPrint()">Change</button>
+
+    <script>
+        let ele=document.getElementsByClassName("classname")
+        function getPrint() {
+            
+            for (let index = 0; index < ele.length; index++) {
+                ele[index].innerHTML="Hello"
+                ele[index].style.backgroundColor="red"
+            }
+        }
+    </script>
+</body>
+</html>

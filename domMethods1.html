@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1" onmouseover="getOver()">How are you??</p>
+    <p id="para2" onclick="getClick()">Hello</p>
+    <script>
+        // getElementById("idName"):
+
+        let ele1=document.getElementById("para1");
+        let ele2=document.getElementById("para2");
+        
+
+        function getOver() {
+            ele1.innerHTML="I am fine...!!"
+            ele1.style.color="red"
+        }
+
+        function getClick() {
+            ele2.innerHTML="Bye"
+            ele2.style.color="blue"
+        }
+    </script>
+</body>
+</html>

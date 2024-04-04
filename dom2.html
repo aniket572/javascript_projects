@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" onclick="getEle1()" name="gen" id="rad1">
+    <input type="radio" onclick="getEle2()" name="gen" id="rad2">
+    <input type="radio" onclick="getEle3()" name="gen" id="rad3">
+    <script>
+        let ele=document.getElementsByName("gen")
+        console.log(ele[0]);
+        console.log(ele[1]);
+        console.log(ele[2]);
+
+        function getEle1() {
+            ele[0].style.accentColor="red"
+        }
+        function getEle2() {
+            ele[1].style.accentColor="blue"
+        }
+        function getEle3() {
+            ele[2].style.accentColor="green"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dataType={
+        string:"string datatype",
+        number:123,
+        boolean:true,
+        null1:null,
+        fun:()=>{console.log("hello baburav");},
+        obj:{name:"object1",type:"object datatype"}
+    }
+    console.log(dataType);
+    console.log(typeof(dataType.null1));
+    console.log(dataType.string);
+    console.log(dataType.fun());
+    console.log(dataType.obj.name);
+    console.log(dataType.obj.type);
+    dataType.obj.statuc=true;
+    console.log(dataType.obj);
+    </script>
+</body>
+</html>

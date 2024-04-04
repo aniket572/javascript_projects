@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print"></p>
+    <button onclick="getDate()">Get Date</button>
+    <button onclick="getFullYear()">Get Year</button>
+    <button onclick="getMonth()">Get Month</button>
+    <script>
+        let ele=document.getElementById("print")
+        let date=new Date()
+        function getDate() {
+            ele.innerHTML=date.getDate();
+        }
+        function getFullYear() {
+            ele.innerHTML=date.getFullYear();
+        }
+        function getMonth() {
+            ele.innerHTML=date.getMonth()+1;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1={
+            name:"jay",
+            age:24,
+            email:"jay123@gmail.com"
+        }
+        console.log(obj1);
+
+        let obj2={
+            "name":"viajy",
+            "age":"24",
+            "email":"vijay123@gmail.com"
+        }
+        console.log(obj2);
+        // console.log(typeof (obj2.age));
+
+        let data1=JSON.stringify(obj1);
+        console.log(data1);
+
+        let data2=JSON.parse(data1);
+        console.log(data2);
+    </script>
+</body>
+</html>

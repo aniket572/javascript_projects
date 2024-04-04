@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  debugger;
+  function person1(name, callback){
+   console.log("P1 is Talking with:"+name);
+   setTimeout(callback , 1000);
+  }
+ function person2(){
+  console.log("p2 has called");
+ 
+ }
+ function person3(name,call2){
+  console.log("p3 is talking with"+name);
+  setTimeout(call2,2000)
+ }
+ function person4(){
+  console.log("p4 has called");
+  
+ }
+ function person5(name,call4){
+  console.log("p5 is talking with"+name);
+  setTimeout(call4,3000)
+ }
+ function person6(){
+  console.log("p6 has called");
+  
+ }
+ function person7(f,call6){
+  console.log("p7 is talking with"+f);
+  setTimeout(call6,4000)
+ }
+ function person8(){
+  console.log("p8 has called");
+ 
+ }
+ function person9(h,call8){
+  console.log("p9 is talking with"+h);
+  setTimeout(call8,6000)
+ }
+ function person10(){
+  console.log("p10 has called");
+ }
+ person1("san",person2);
+ person2("great",person3)
+ person3("hello",person4);
+ person4("jdfdj",person5);
+ person5("sanju",person6);
+ person6("samsung",person7);
+ person7("virat",person8);
+ person8("king",person9);
+ person9("rohit",person10);
+//  person10("san",person10);
+
+</script>
+</body>
+</html>

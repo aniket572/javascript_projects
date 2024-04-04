@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fetch('./players.json').then((response) => {
+            return response.json()
+        }).then((res) => {
+            let input = prompt("Enter your player's name");
+            switch (input) {
+                case "sachin":
+                    console.log(res.sachin);
+                    break;
+                case "virat":
+                    console.log(res.virat);
+                case "rohit":
+                    console.log(res.rohit);
+                case "yuvi":
+                    console.log(res.yuvi);
+                case "gill":
+                    console.log(res.gill);
+                case "surya":
+                    console.log(res.surya);
+                case "dhawan":
+                    console.log(res.dhawan);
+                default:
+                    alert("Player not found!!")
+                    break;
+            }
+        })
+    </script>
+</body>
+
+</html>

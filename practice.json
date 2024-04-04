@@ -1,0 +1,17 @@
+{
+    "person1":{
+        "name":"aniket",
+        "age":"24",
+        "id":"121"
+    },
+    "person2":{
+        "name":"sanket",
+        "age":"21",
+        "id":"122"
+    },
+    "person3":{
+        "name":"krishna",
+        "age":"24",
+        "id":"123"
+    }
+}

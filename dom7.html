@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let node=document.createElement("h1")
+        console.log(node);
+        let ele1=document.createTextNode("Hello World!!!")
+
+        node.appendChild(ele1)
+        console.log(ele1);
+
+        document.body.appendChild(node)
+
+        node.id="head"
+        let getId=document.getElementById("head")
+        getId.style.color="red"
+        
+    </script>
+</body>
+</html>

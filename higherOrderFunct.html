@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Function</title>
+</head>
+<body>
+    <script>
+        // Higher Order Function:- The function which can accept the function
+        // As an Argument or return the function is called as Higher Order Function
+        function parent() {
+            console.log("hey helllo");
+            return()=>{
+                console.log("hey this is HOF");
+            }
+        }
+        parent()();
+    </script>
+</body>
+</html>

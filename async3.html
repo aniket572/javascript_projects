@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise1=new Promise((res1,rej1)=>{
+            setTimeout(()=>{
+                let obj1={
+                    name:"jay",
+                    age:23,
+                    id:1
+                }
+                res1(obj1)
+            },2000)
+        })
+        let promise2=new Promise((res2,rej2)=>{
+            setTimeout(()=>{
+                let obj2={
+                    name:"vijay",
+                    age:25,
+                    id:2
+                }
+                res2(obj2)
+            },4000)
+        })
+        let promise3=new Promise((res3,rej3)=>{
+            setTimeout(()=>{
+                let obj3={
+                    name:"sanjay",
+                    age:28,
+                    id:3
+                }
+                res3(obj3)
+            },6000)
+        })
+        let promise4=new Promise((res4,rej4)=>{
+            setTimeout(()=>{
+                let obj4={
+                    name:"digvijay",
+                    age:33,
+                    id:4
+                }
+                res4(obj4)
+            },8000)
+        })
+        let promise5=new Promise((res5,rej5)=>{
+            setTimeout(()=>{
+                let obj5={
+                    name:"dhananjay",
+                    age:31,
+                    id:1
+                }
+                res5(obj5)
+            },10000)
+        })
+
+        async function getData() {
+            let data1=await promise1;
+            console.log(data1);
+            let data2=await promise2;
+            console.log(data2);
+            let data3=await promise3;
+            console.log(data3);
+            let data4=await promise4;
+            console.log(data4);
+            let data5=await promise5;
+            console.log(data5);
+
+        }
+        getData()
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating a object from JSON String</h2>
+    <p id="demo"></p>
+    <script>
+        let obj1=`{
+            "name":"aniket",
+            "age":"24",
+            "id":"123"
+        }`
+
+        let data2=JSON.parse(obj1)
+        let ele=document.getElementById("demo").innerHTML=data2.name + ", " + data2.age
+    </script>
+</body>
+</html>

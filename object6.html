@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj8</title>
+</head>
+<body>
+    <script>
+        let baba=new Object()
+        baba.name="jay"
+        baba.age=24
+        baba.proff="engineer"
+        console.log(baba);
+
+
+        let obj1=new Object();
+        obj1.nestedobj={name:"jayesh",type:"object"};
+        obj1.fun=()=>{console.log("this is an object functon");}
+        console.log(obj1);
+        obj1.fun()
+
+
+
+        let obj3={
+            fun:function(){
+                let obj5={a:10,b:20,c:30 }
+            }
+        }
+        console.log(obj3);
+    </script>
+</body>
+</html>

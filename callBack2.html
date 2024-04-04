@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1(callback) {
+            console.log("fun1 is invoked");
+            setTimeout(callback,3000)
+            return ()=>{
+                console.log('hof');
+            }
+        }
+        function fun2() {
+            console.log("fun2 is invoked");
+            setTimeout(fun3,3000)
+        }
+        function fun3() {
+            console.log("fun3 is invoked");
+            setTimeout(fun4,3000)
+        }
+        function fun4() {
+            console.log("fun4 is invoked");
+            setTimeout(fun5,3000)
+        }
+        function fun5() {
+            console.log("fun5 is invoked");
+            setTimeout(fun6,3000)
+        }
+        function fun6() {
+            console.log("fun6 is invoked");
+            setTimeout(fun7,3000)
+        }
+        function fun7() {
+            console.log("fun7 is invoked");
+            setTimeout(fun8,3000)
+        }
+        function fun8() {
+            console.log("fun8 is invoked");
+            setTimeout(fun9,3000)
+        }
+        function fun9() {
+            console.log("fun9 is invoked");
+            setTimeout(fun10,3000)
+        }
+        function fun10() {
+            console.log("fun10 is invoked");
+        }
+        fun1(fun2)()
+    </script>
+</body>
+</html>

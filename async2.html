@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise1=new Promise((res1,rej1)=>{
+            setTimeout(()=>{
+                let mobile={
+                    company:"samsung",
+                    price:40000,
+                    make:"india"
+                }
+                res1(mobile)
+                // rej1(alert("Mobile not found!!"))
+            },2000)
+        })
+        async function getData() {
+            let data1=await promise1
+            console.log(data1);
+        }
+        getData()
+    </script>
+</body>
+</html>

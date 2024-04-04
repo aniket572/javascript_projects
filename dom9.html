@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>TEA</li>
+        <li>MILK</li>
+        <li>COFFEE</li>
+    </ul>
+    <button onclick="getAdd()">ADD</button>
+    <button onclick="getRemove()">REMOVE</button>
+
+    <script>
+        let node1=document.getElementById("list")
+        let node2=document.createElement("li")
+        let node3=document.createTextNode("WATER")
+        document.body.appendChild(node1)
+
+        function getAdd() {
+            node1.appendChild(node2)
+            node2.appendChild(node3)
+        }
+        function getRemove() {
+            node2.remove()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para" class="para"></p>
+    <p id="para" class="para"></p>
+    <p id="para" class="para"></p>
+    <p id="para" class="para"></p>
+
+    <script>
+        // let ele=document.querySelectorAll("p")
+        // let ele=document.querySelectorAll("#para")
+        let ele=document.querySelectorAll(".para")
+        console.log(ele);
+
+        let ele2=Array.from(ele)
+        console.log(ele2);
+
+        ele2.forEach((elements,index)=>{
+            elements.innerHTML=`para ${index}`;
+            elements.style.color="red"
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head" onclick="getEle1()">Click Here !!!</h1>
+    <h1 class="head" onclick="getEle2()">Click Here !!!</h1>
+    <h1 class="head" onclick="getEle3()">Click Here !!!</h1>
+    <h1 class="head" onclick="getEle4()">Click Here !!!</h1>
+
+    <script>
+        let ele=document.getElementsByClassName("head")
+
+        function getEle1() {
+            ele[0].innerHTML="heading 1";
+            ele[0].style.color="red"
+        }
+        function getEle2() {
+            ele[1].innerHTML="heading 2";
+            ele[1].style.color="blue"
+        }
+        function getEle3() {
+            ele[2].innerHTML="heading 3";
+            ele[2].style.color="green"
+        }
+        function getEle4() {
+            ele[3].innerHTML="heading 4";
+            ele[3].style.color="purple"
+        }
+    </script>
+</body>
+</html>

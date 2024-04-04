@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head" onclick="getPrint()">HEAD 1</h1>
+    <h1 id="head" onclick="getPrint()">HEAD 2</h1>
+    <h1 id="head" onclick="getPrint()">HEAD 3</h1>
+    <h1 class="head" onmouseover="getPrint1()" onmouseout="getPrint2()">HEAD 1</h1>
+    <h1 class="head" onmouseover="getPrint1()" onmouseout="getPrint2()">HEAD 2</h1>
+    <h1 class="head" onmouseover="getPrint1()" onmouseout="getPrint2()">HEAD 3</h1>
+
+    <script>
+        let ele=document.querySelector("head");  //id selector
+        let ele1=document.querySelector("head"); //class selector
+        let ele2=document.querySelector("h1");  //tag selector
+
+        function getPrint(){
+            ele.innerHTML="heading 1";
+            ele.style.color="red"
+        }
+
+        function getPrint1() {
+            ele1.innerHTML="heading over";
+            ele1.style.color="blue"
+        }
+
+        function getPrint2() {
+            ele2.innerHTML="heading out";
+            ele2.style.color="green"
+        }
+    </script>
+</body>
+</html>
